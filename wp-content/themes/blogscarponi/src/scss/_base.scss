@@ -1,0 +1,42 @@
+html {
+  font-size: 15px; // 1rem
+}
+
+body {
+  font-size: $main-font-size;
+  font-family: $sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul,
+ul li {
+  list-style-type: disc;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+img {
+  @extend .align-top;
+  &.cover-image {
+  	object-fit: cover;
+  	object-position: center;
+  	font-family: 'object-fit: cover; object-position: center;';
+  }
+}
+
+.max-width-5 {
+  max-width: 78rem;
+}

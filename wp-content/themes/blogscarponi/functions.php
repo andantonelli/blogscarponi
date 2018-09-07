@@ -89,6 +89,11 @@ require get_template_directory() . '/inc/utils.php';
  */
 require get_template_directory() . '/inc/customizer.php';
 
+/*
+ * Custom post type
+ */
+require get_template_directory() . '/inc/custom-content-type.php';
+
 /**
  * ACF options page
  */

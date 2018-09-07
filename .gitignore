@@ -12,7 +12,7 @@ wp-content/wp-cache-config.php
 wp-content/plugins/hello.php
 
 # Ignore starter related files
-wp-content/themes/incode_starter
+wp-content/themes/blogscarponi
 _private/starter_content.xml
 bin/setup.sh
 

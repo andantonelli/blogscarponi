@@ -18,27 +18,27 @@
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses incode_starter_header_style()
+ * @uses blogscarponi_header_style()
  */
-function incode_starter_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'incode_starter_custom_header_args', array(
+function blogscarponi_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'blogscarponi_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
 		'width'                  => 1000,
 		'height'                 => 250,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'incode_starter_header_style',
+		'wp-head-callback'       => 'blogscarponi_header_style',
 	) ) );
 }
-add_action( 'after_setup_theme', 'incode_starter_custom_header_setup' );
+add_action( 'after_setup_theme', 'blogscarponi_custom_header_setup' );
 
-if ( ! function_exists( 'incode_starter_header_style' ) ) :
+if ( ! function_exists( 'blogscarponi_header_style' ) ) :
 /**
  * Styles the header image and text displayed on the blog.
  *
- * @see incode_starter_custom_header_setup().
+ * @see blogscarponi_custom_header_setup().
  */
-function incode_starter_header_style() {
+function blogscarponi_header_style() {
 	$header_text_color = get_header_textcolor();
 
 	/*

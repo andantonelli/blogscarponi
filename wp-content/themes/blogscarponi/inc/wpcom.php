@@ -12,7 +12,7 @@
  *
  * @global array $themecolors
  */
-function incode_starter_wpcom_setup() {
+function blogscarponi_wpcom_setup() {
 	global $themecolors;
 
 	// Set theme colors for third party services.
@@ -26,4 +26,4 @@ function incode_starter_wpcom_setup() {
 		);
 	}
 }
-add_action( 'after_setup_theme', 'incode_starter_wpcom_setup' );
+add_action( 'after_setup_theme', 'blogscarponi_wpcom_setup' );

@@ -35,6 +35,7 @@
     "babel-plugin-transform-class-properties": "^6.24.1",
     "basscss-sass": "^4.0.0",
     "gsap": "^1.19.1",
+    "lodash": "^4.17.10",
     "normalize.css": "^6.0.0",
     "object-fit-images": "^3.2.3",
     "scrollmagic": "^2.0.5",

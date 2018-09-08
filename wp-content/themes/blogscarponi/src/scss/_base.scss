@@ -37,6 +37,35 @@ img {
   }
 }
 
+.fluid {
+  width: 100%;
+  height: auto;
+}
+
+.wysiwyg {
+  line-height: 170%;
+
+  p {
+    @extend .p0;
+    @extend .m0;
+    @extend .mb2;
+  }
+
+  a {
+    color: $blue--500;
+    text-decoration: underline;
+  }
+
+  strong {
+    color: $black--90;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+}
+
 .max-width-5 {
   max-width: 78rem;
 }

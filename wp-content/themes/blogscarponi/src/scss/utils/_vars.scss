@@ -1,14 +1,24 @@
 /* FONTS
    ----------------------------- */
-$sans-serif: 'Helvetica', 'Arial', sans-serif;
+$sans-serif: 'Roboto Condensed', sans-serif;
+$alt-sans: 'New Grotesk Square', 'Roboto Condensed', sans-serif;
 
-/* SPACINGS
+/* SIZES
    ----------------------------- */
-$main-font-size: 15px;
+$font--170: 1.73rem; // 26px
+$font--160: 1.6rem; // 24px
+$font--90: .9rem;
+$main-font-size: 16px;
 $spacer: 2rem;
 
 /* COLORS
    ----------------------------- */
+$blue--500: #256CCF;
+$yellow--500: #FFEC1D;
+$black--90: rgba(0,0,0,.9);
+$black--40: rgba(0,0,0,.4);
+$black--20: rgba(0,0,0,.2);
+$white--20: rgba(255,255,255,.2);
 
 /* MEDIA QUERIES
    ----------------------------- */

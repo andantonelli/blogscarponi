@@ -1,0 +1,44 @@
+/* COMMON PAGES
+   ----------------------------- */
+.content-area {
+  .container {
+    width: 75vw;
+    padding-left: 10%;
+
+    @media #{$breakpoint-lg-mx} {
+      padding-left: 0;
+    }
+  }
+
+  .sidebar {
+    width: 25vw;
+    background: #000;
+
+    .sidebar__ranked-team {
+      color: #FFF;
+      border-bottom: 1px solid #{$white--20};
+    }
+  }
+}
+
+.page-template .page {
+  border-bottom: 1px solid #{$black--20};
+}
+
+/* HOME
+   ----------------------------- */
+.home .page {
+  .page__header {
+    background: url('../../assets/images/johnny.png') no-repeat 95% center;
+    background-size: 22%;
+  }
+
+  .page__title {
+    width: 50%;
+    font-family: $alt-sans;
+    font-size: 6rem;
+    font-weight: 800;
+    line-height: .85;
+    @extend .uppercase;
+  }
+}

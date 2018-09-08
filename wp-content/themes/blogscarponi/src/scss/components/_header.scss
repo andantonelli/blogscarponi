@@ -1,0 +1,28 @@
+/* HEADER MAIN
+   ----------------------------- */
+.header {
+  width: 75vw;
+  padding-left: 10%;
+  background: $blue--500;
+
+  @media #{$breakpoint-lg-mx} {
+    padding-left: 0;
+  }
+
+  .header__nav {
+    ul {
+      @extend .m0;
+      @extend .p0;
+
+      li {
+        @extend .list-reset;
+        @extend .inline-block;
+        @extend .pr2;;
+
+        a {
+          color: #FFF;
+        }
+      }
+    }
+  }
+}

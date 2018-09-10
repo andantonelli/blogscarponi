@@ -2,7 +2,7 @@
    ----------------------------- */
 .content-area {
   .container {
-    width: 75vw;
+    width: 75%;
     padding-left: 10%;
 
     @media #{$breakpoint-lg-mx} {
@@ -11,12 +11,25 @@
   }
 
   .sidebar {
-    width: 25vw;
+    width: 25%;
     background: #000;
+
+    .sidebar__label {
+      color: #FFF;
+      font-family: $alt-sans;
+      font-size: $font--160;
+    }
 
     .sidebar__ranked-team {
       color: #FFF;
       border-bottom: 1px solid #{$white--20};
+
+      &:first-of-type {
+        background: $yellow--500;
+        margin: 0 -.5rem;
+        color: #000;
+        @extend .px1;
+      }
     }
   }
 }
@@ -30,11 +43,12 @@
 .home .page {
   .page__header {
     background: url('../../assets/images/johnny.png') no-repeat 95% center;
-    background-size: 22%;
+    background-size: 20%;
   }
 
   .page__title {
     width: 50%;
+    max-width: 30rem;
     font-family: $alt-sans;
     font-size: 6rem;
     font-weight: 800;

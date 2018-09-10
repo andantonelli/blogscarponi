@@ -924,7 +924,8 @@ img {
   padding-bottom: 0.5rem;
 }
 
-.px1 {
+.px1,
+.content-area .sidebar .sidebar__ranked-team:first-of-type {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
@@ -3638,7 +3639,7 @@ img.cover-image {
    ----------------------------- */
 
 .content-area .container {
-  width: 75vw;
+  width: 75%;
   padding-left: 10%;
 }
 
@@ -3649,13 +3650,25 @@ img.cover-image {
 }
 
 .content-area .sidebar {
-  width: 25vw;
+  width: 25%;
   background: #000;
+}
+
+.content-area .sidebar .sidebar__label {
+  color: #FFF;
+  font-family: "New Grotesk Square", "Roboto Condensed", sans-serif;
+  font-size: 1.6rem;
 }
 
 .content-area .sidebar .sidebar__ranked-team {
   color: #FFF;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.content-area .sidebar .sidebar__ranked-team:first-of-type {
+  background: #FFEC1D;
+  margin: 0 -.5rem;
+  color: #000;
 }
 
 .page-template .page {
@@ -3667,15 +3680,19 @@ img.cover-image {
 
 .home .page .page__header {
   background: url(../assets/images/johnny.png) no-repeat 95% center;
-  -moz-background-size: 22%;
-  background-size: 22%;
+  -moz-background-size: 20%;
+  background-size: 20%;
 }
 
 .home .page .page__title {
   width: 50%;
+  max-width: 30rem;
   font-family: "New Grotesk Square", "Roboto Condensed", sans-serif;
   font-size: 6rem;
   font-weight: 800;
   line-height: .85;
 }
+
+/* SECTION HOME POSTS
+   ----------------------------- */
 

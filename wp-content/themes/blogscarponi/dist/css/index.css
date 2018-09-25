@@ -3714,8 +3714,24 @@ img.cover-image {
   line-height: .85;
 }
 
+/* POST
+   ----------------------------- */
+
 /* SECTION
    ----------------------------- */
+
+/* MATCH
+   ----------------------------- */
+
+.match .match__score {
+  font-family: "New Grotesk Square", "Roboto Condensed", sans-serif;
+  font-size: 4rem;
+  min-width: 4rem;
+}
+
+.match .match__winner .match__score {
+  background: #FFEC1D;
+}
 
 /* PREVIEW POST
    ----------------------------- */

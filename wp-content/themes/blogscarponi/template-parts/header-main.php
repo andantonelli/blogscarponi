@@ -1,13 +1,11 @@
 <header class="header header--main" role="banner">
-  <div class="header__inner px2 py2">
-    <!-- <div>
-      <a class="header__logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-        <img src="<?php echo get_field('logo', 'options'); ?>"/>
-      </a>
-    </div> -->
-
-    <nav class="header__nav" role="navigation">
+  <div class="header__inner flex items-center px2 md-py2 py1 clearfix">
+    <nav class="header__nav col col-6" role="navigation">
       <?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?>
     </nav>
+    
+    <div class="header__toggle col col-6 right-align">
+      <div class="header__icon inline-block md-hide lg-hide"></div>
+    </div>
   </div>
 </header>

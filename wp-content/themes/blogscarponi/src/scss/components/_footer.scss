@@ -9,9 +9,21 @@
     padding-left: 0;
   }
 
+  @media #{$breakpoint-md-mx} {
+    width: 100%;
+  }
+
   > * {
     color: $black--40;
     font-size: .85rem;
     letter-spacing: .07;
+  }
+
+  .footer__copyright,
+  .footer__mark {
+    @media #{$breakpoint-sm-mx} {
+      text-align: center;
+      width: 100%;
+    }
   }
 }

@@ -9,27 +9,16 @@
 
 get_header(); ?>
 
-	<div class="content-area">
-		<?php
-		if ( have_posts() ) : ?>
-
-			<header class="page__header">
-				<?php
-					the_archive_title( '<h1 class="page__title">', '</h1>' );
-					the_archive_description( '<div class="archive-description">', '</div>' );
-				?>
-			</header>
-
-			<?php while (have_posts()): the_post();
-				get_template_part('template-parts/content', get_post_format());
-			endwhile;
-
-			the_posts_navigation();
-
-			else:
-				get_template_part('template-parts/content', 'none');
-		endif; ?>
+<div class="content-area">
+	<div class="container">
+		<?php while (have_posts()): the_post();
+			get_template_part('template-parts/content', get_post_format());
+		endwhile; ?>
+		<?php the_posts_navigation(); ?>
 	</div>
+	<div class="sidebar fixed top-0 right-0 bottom-0">
+		<?php get_template_part('template-parts/content','sidebar'); ?>
+	</div>
+</div>
 
-<?php
-get_footer();
+<?php get_footer();

@@ -8,11 +8,25 @@
     @media #{$breakpoint-lg-mx} {
       padding-left: 0;
     }
+
+    @media #{$breakpoint-md-mx} {
+      width: 100%;
+    }
   }
 
   .sidebar {
     width: 25%;
     background: #000;
+
+    @media #{$breakpoint-md-mx} {
+      width: 20rem;
+      right: -20rem;
+      transition: right .2s ease-in-out;
+
+      &.open {
+        right: 0;
+      }
+    }
 
     .sidebar__label {
       color: #FFF;
@@ -57,7 +71,18 @@
   }
 }
 
-/* POST
+/* POST > MATCH
    ----------------------------- */
-.single-post .post {
+.match {
+  .match__score {
+    font-family: $alt-sans;
+    font-size: 4rem;
+    min-width: 4rem;
+  }
+
+  .match__winner {
+    .match__score {
+      background: $yellow--500;
+    }
+  }
 }

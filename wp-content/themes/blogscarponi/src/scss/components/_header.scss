@@ -9,6 +9,10 @@
     padding-left: 0;
   }
 
+  @media #{$breakpoint-md-mx} {
+    width: 100%;
+  }
+
   .header__nav {
     ul {
       @extend .m0;
@@ -24,5 +28,13 @@
         }
       }
     }
+  }
+
+  .header__icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    background: url('../../assets/images/list.svg') no-repeat center center;
+    background-size: cover;
+    cursor: pointer;
   }
 }

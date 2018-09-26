@@ -591,7 +591,8 @@ template {
 }
 
 .inline-block,
-.header .header__nav ul li {
+.header .header__nav ul li,
+.button {
   display: inline-block;
 }
 
@@ -3565,8 +3566,23 @@ img {
   }
 }
 
+@media (max-width: 52em) {
+  .header {
+    width: 100%;
+  }
+}
+
 .header .header__nav ul li a {
   color: #FFF;
+}
+
+.header .header__icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  background: url(../assets/images/list.svg) no-repeat center center;
+  -moz-background-size: cover;
+  background-size: cover;
+  cursor: pointer;
 }
 
 /* FOOTER
@@ -3584,10 +3600,34 @@ img {
   }
 }
 
+@media (max-width: 52em) {
+  .footer {
+    width: 100%;
+  }
+}
+
 .footer > * {
   color: rgba(0, 0, 0, 0.4);
   font-size: .85rem;
   letter-spacing: .07;
+}
+
+@media (max-width: 40em) {
+  .footer .footer__copyright,
+  .footer .footer__mark {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.button {
+  padding: .7rem 1rem;
+  background: #256CCF;
+  color: #FFF;
+}
+
+.button:hover {
+  text-decoration: none;
 }
 
 html {
@@ -3656,6 +3696,10 @@ img.cover-image {
   max-width: 78rem;
 }
 
+.content-area {
+  min-height: 80vh;
+}
+
 /* COMMON PAGES
    ----------------------------- */
 
@@ -3670,9 +3714,29 @@ img.cover-image {
   }
 }
 
+@media (max-width: 52em) {
+  .content-area .container {
+    width: 100%;
+  }
+}
+
 .content-area .sidebar {
   width: 25%;
   background: #000;
+}
+
+@media (max-width: 52em) {
+  .content-area .sidebar {
+    width: 20rem;
+    right: -20rem;
+    -webkit-transition: right .2s ease-in-out;
+    -moz-transition: right .2s ease-in-out;
+    transition: right .2s ease-in-out;
+  }
+
+  .content-area .sidebar.open {
+    right: 0;
+  }
 }
 
 .content-area .sidebar .sidebar__label {
@@ -3714,13 +3778,7 @@ img.cover-image {
   line-height: .85;
 }
 
-/* POST
-   ----------------------------- */
-
-/* SECTION
-   ----------------------------- */
-
-/* MATCH
+/* POST > MATCH
    ----------------------------- */
 
 .match .match__score {
@@ -3732,6 +3790,9 @@ img.cover-image {
 .match .match__winner .match__score {
   background: #FFEC1D;
 }
+
+/* SECTION
+   ----------------------------- */
 
 /* PREVIEW POST
    ----------------------------- */

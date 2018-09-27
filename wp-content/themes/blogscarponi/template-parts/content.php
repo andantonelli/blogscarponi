@@ -13,17 +13,17 @@
 ?>
 
 <div class="post__image pl2"><?php echo fly_get_attachment_image( $image, array( 1920, 800 ), true, array('class' => 'align-middle fit', 'style' => 'width: 100%; height: auto;')); ?></div>
-<article id="post-<?php the_ID(); ?>" <?php post_class('pl2 pr4 mr3 mb4 pb4'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('pl2 pr2 sm-pr4 mr0 sm-mr3 mb4 pb4'); ?>>
 	<header class="post__header pt3">
 		<span class="post__date"><?php echo $date; ?></span>
 		<?php the_title( '<h1 class="post__title uppercase regular mt2 mb3">', '</h1>' ); ?>
 	</header>
-	<div class="post__content wysiwyg">
+	<div class="post__content mb3 wysiwyg">
 		<?php the_content(); ?>
 	</div>
 	
 	<?php if($match_review): ?>
-		<div class="post__match-review py3 match">
+		<div class="post__match-review my3 match">
 			<?php while(has_sub_field('match_review')): 
 					$match = get_sub_field('match');
 					$review = get_sub_field('review'); ?>

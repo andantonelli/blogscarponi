@@ -3756,6 +3756,20 @@ img.cover-image {
   color: #000;
 }
 
+.content-area .sidebar .sidebar__toggle {
+  top: 1rem;
+  right: 1rem;
+}
+
+.content-area .sidebar .sidebar__icon {
+  height: 1.2rem;
+  width: 1.2rem;
+  background: url(../assets/images/close.svg) no-repeat center center;
+  -moz-background-size: cover;
+  background-size: cover;
+  cursor: pointer;
+}
+
 .page-template .page {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -3769,6 +3783,15 @@ img.cover-image {
   background-size: 20%;
 }
 
+@media (max-width: 40em) {
+  .home .page .page__header {
+    padding-top: 7rem;
+    background: url(../assets/images/johnny.png) no-repeat 90% 10%;
+    -moz-background-size: 35%;
+    background-size: 35%;
+  }
+}
+
 .home .page .page__title {
   width: 50%;
   max-width: 30rem;
@@ -3776,6 +3799,13 @@ img.cover-image {
   font-size: 6rem;
   font-weight: 800;
   line-height: .85;
+}
+
+@media (max-width: 40em) {
+  .home .page .page__title {
+    width: 80%;
+    font-size: 4rem;
+  }
 }
 
 /* POST > MATCH

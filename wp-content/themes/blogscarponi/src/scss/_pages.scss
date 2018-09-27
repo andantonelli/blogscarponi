@@ -45,6 +45,19 @@
         @extend .px1;
       }
     }
+
+    .sidebar__toggle {
+      top: 1rem;
+      right: 1rem;
+    }
+
+    .sidebar__icon {
+      height: 1.2rem;
+      width: 1.2rem;
+      background: url('../../assets/images/close.svg') no-repeat center center;
+      background-size: cover;
+      cursor: pointer;
+    }
   }
 }
 
@@ -58,6 +71,12 @@
   .page__header {
     background: url('../../assets/images/johnny.png') no-repeat 95% center;
     background-size: 20%;
+
+    @media #{$breakpoint-sm-mx} {
+      padding-top: 7rem;
+      background: url('../../assets/images/johnny.png') no-repeat 90% 10%;
+      background-size: 35%;
+    }
   }
 
   .page__title {
@@ -68,6 +87,11 @@
     font-weight: 800;
     line-height: .85;
     @extend .uppercase;
+
+    @media #{$breakpoint-sm-mx} {
+      width: 80%;
+      font-size: 4rem;
+    }
   }
 }
 

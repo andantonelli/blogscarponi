@@ -15,3 +15,21 @@ export const setupSlideshow = (el, type = 'fullwidth') => {
 
   $el.slick(opts[type])
 }
+
+export const toggleSidebar = () => {
+  const openIcon = $('.header__icon')
+  const closeIcon = $('.sidebar__icon')
+  const sidebar = $('.sidebar')
+
+  openIcon.on('click', function () {
+    sidebar.addClass('open')
+  })
+  
+  closeIcon.on('click', function () {
+    sidebar.removeClass('open')
+  })
+
+  $(window).on('resize', function() {
+    sidebar.removeClass('open')
+  })
+}

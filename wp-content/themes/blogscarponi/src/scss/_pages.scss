@@ -97,16 +97,63 @@
 
 /* POST > MATCH
    ----------------------------- */
+.post {
+  .post__content {
+    @media #{$breakpoint-sm-mx} {
+      font-size: 1.3rem;
+    }
+  }
+}
+
 .match {
+  .match__team {
+    @media #{$breakpoint-sm-mx} {
+      text-align: left;
+      padding: 0 .5rem;
+    }
+  }
+
+  .match__header {
+    @media #{$breakpoint-sm-mx} {
+      display: inline-block;
+      align-items: flex-start;
+      width: 100%;
+    }
+  }
+
+  .match__away {
+    @media #{$breakpoint-sm-mx} {
+      justify-content: flex-start;
+    }
+  }
+
+  .match__home {
+    @media #{$breakpoint-sm-mx} {
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+    }
+  }
+
   .match__score {
     font-family: $alt-sans;
     font-size: 4rem;
     min-width: 4rem;
+
+    @media #{$breakpoint-sm-mx} {
+      font-size: 3rem;
+      min-width: 3rem;
+    }
   }
 
   .match__winner {
     .match__score {
       background: $yellow--500;
+    }
+  }
+  
+  .match__content {
+    @media #{$breakpoint-sm-mx} {
+      font-size: 1.3rem;
     }
   }
 }
